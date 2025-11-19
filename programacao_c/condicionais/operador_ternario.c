@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+
+    int num1 = 60, num2 = 40, maior;
+
+    num1 > num2 ? (maior = num1) : (maior = num2);
+    
+    if (num1 > num2)
+    {
+        printf("O número maior é: %d\n", num1);
+    } else {
+        printf("O número maior é: %d\n", num2);
+    }
+
+    printf("O número maior é: %d\n", maior);
+}
