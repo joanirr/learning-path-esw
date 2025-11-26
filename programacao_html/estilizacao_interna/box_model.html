@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-size:2rem;
+            }
+            #container{
+                width: 1070px;
+                margin: 0 auto;
+                /*display: flex*/
+                /*flex-direction: row;*/ /*todos os elementos em linha*/
+                /*flex-direction: column;*/ /*todos o elementos em coluna*/
+             }
+             /*Uso da pseudoclasse :hover*/
+             #link:hover{
+                color: orangered;
+             }
+             /*Uso do pseudoelemento ::first-line*/
+             #container-texto{
+                padding: 20px;
+                background-color: lightseagreen;
+                border: 30px solid #999;
+                margin-top: 50px;
+             }
+             #container-texto::first-line{
+                color: blue;
+                text-transform: uppercase;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>PseudoClasses</h1>
+            <a href="#" id="link">Link</a>
+
+            <h1>PseudoElementos</h1>
+            <p id="container-texto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Etiam eget ligula eu lectus lobortis condimentum.
+                Aliquam nonummy auctor massa.
+                Pellentesque habitant morbi tristique senectus et
+                netus et malesuada fames ac turpis egestas. Nulla at risus.
+                Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus.
+                Nam mattis, felis ut adipiscing.
+            </p>
+        </div>
+    </body>
+</html>
