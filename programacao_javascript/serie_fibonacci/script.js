@@ -7,7 +7,7 @@ const fibonacci = (x) => {
         fm2 = fm1;
         fm1 = fm;
     }
-    return fm ;
+    return fm;
 }
 const fiboRec = (x) => {
     return (x==0 || x==1) ? 1 : (fiboRec(x-1) + fiboRec(x-2)); 
