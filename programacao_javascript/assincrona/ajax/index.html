@@ -6,32 +6,19 @@
         rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body class="container">
-        <h1>Google Charts</h1>
-
+        <h1>API de Testes httpbin</h1>
         <form class="form m-2">
-            <label class="form-label">Valor de X</label>
-            <input class="form-control" type="number" id="v1"/>
+            <label class="form-label">Nome</label>
+            <input class="form-control" type="text" id="n1"/>
             <a class="btn btn-primary m-2" href="#" onclick="executar()">Executar</a>
         </form>
-
-        <div id="chart_div"></div>
-        <div class="alert alert-warning" id="media"></div>
-
+        <div class="alert alert-warning" id="retorno"></div>
         <script src="script.js"></script>
-
         <script>
-            google.charts.load('current', {packages: ['corechart', 'line']});
-
             const executar = () => {
-                const x = eval(document.getElementById("v1").value);
-                addValor(x);
-
-                google.charts.setOnLoadCallback(drawBasic);
-
-                document.getElementById("media").innerHTML =
-                    `Média: ${media()}`;
+                const nome = document.getElementById("n1").value;
+                ajax(nome,"retorno");
             }
         </script>
-
     </body>
 </html>
